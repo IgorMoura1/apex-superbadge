@@ -1,0 +1,7 @@
+trigger MaintenanceRequestTrigger on Case (after update) {
+    List<Case> newRequests = MaintenanceRequestHelper.updateWorkOrders(Trigger.new, Trigger.oldMap);
+    
+    if (!newRequests.isEmpty()) {
+        insert newRequests;
+    }
+}
