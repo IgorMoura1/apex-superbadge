@@ -3,4 +3,4 @@ Você pode destacar blocos de código de várias linguagens usando três crases 
 
 Sintaxe:
 
-<pre> ```javascript function sayHello() { console.log("Hello, world!"); } ``` </pre>
+<pre> javascript function sayHello() { console.log("Hello, world!"); } </pre>
